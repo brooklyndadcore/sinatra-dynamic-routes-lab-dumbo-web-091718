@@ -24,15 +24,14 @@ class App < Sinatra::Base
     num1 = params[:number1].to_i
     num2 = params[:number2].to_i
     if opp == 'add'
-      func = +
+      "#{num1 + num2}"
     elsif opp == 'subtract'
-      func = -
+      "#{num1 - num2}"
     elsif opp == 'multiply'
-      func = *
+      "#{num1 * num2}"
     elsif opp == 'divide'
-      func = /
+      "#{num1 / num2}"
     end
-    "#{num1 func num2}"
   end
 
 end
